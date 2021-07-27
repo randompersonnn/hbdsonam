@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #if{
+            width: 100%;
+            height: 95vh;
+            border: none;
+            
+            outline: none;
+        }
+        #if1{
+            width: 100%;
+            height: 95vh;
+            border: none;
+            outline: none;
+        }
+
+        /* .mycl{ */
+            /* display: inline-block;
+            margin: 24px auto;
+            width: 100%;
+            height: 50vh;
+        } */
+    </style>
+</head>
+<body>
+    <div class="mycl">
+      
+    </div>
+    <script>
+        doc
+    </script>
+</body>
+</html>
+
+
+<script>
+
+var slider1 = document.getElementById("range");
+var slider2 = document.getElementById("secrange");
+
+var layer1 = document.getElementById("l1");
+var layer2 = document.getElementById("l2");
+
+
+var output = document.getElementById("ptag");
+output.innerHTML = slider.value;
+
+slider1.oninput = function() {
+    output.innerHTML = this.value;
+  //   let x = 1 -   this.value/100 
+    layer1.style.opacity = 1 - this.value/100
+
+    if(this.value == 100){
+        layer1.style.display = "none"
+    }
+}
+
+slider2.oninput = function() {
+    output.innerHTML = this.value;
+  //   let x = 1 -   this.value/100 
+    // document.getElementById("l2").style.opacity = Math.abs(this.value/50)
+
+    if(this.value > 95){
+        // document.getElementById("l2").style.display = "none"
+        hidedisplay("l2")
+      }
+      if(this.value < 0){
+      
+
+  }
+}
+
+function hidedisplay(s){
+    var num = parseInt(s.slice(1))
+
+}
+</script>
+
+<script>
+    var slider = document.getElementById("range");
+var output = document.getElementById("ptag");
+output.innerHTML = slider.value;
+
+document.getElementById("range").oninput = function() {
+  output.innerHTML = this.value;
+//   let x = 1 -   this.value/100 
+  document.getElementById("l1").style.opacity = 1 - this.value/100
+
+  if(this.value == 100){
+      document.getElementById("l1").style.display = "none"
+  }
+}
+
+document.getElementById("secrange").oninput = function() {
+  output.innerHTML = this.value;
+//   let x = 1 -   this.value/100 
+  document.getElementById("l2").style.opacity = Math.abs(this.value/50)
+
+  if(this.value > 95){
+      // document.getElementById("l2").style.display = "none"
+      hid
+    }
+    if(this.value == 0){
+    document.getElementById("l2").style.display = ""
+  }
+}
+
+function hidedisplay(s){
+
+}
+</script>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Happy Birthday</title>
+  <meta name="description" content="Happy Birthday">
+  <meta name="author" content="Andre van Tonder">
+
+  <link rel="stylesheet" href="css/main.css?v=1.0">
+
+  <style>
+    .ab{
+      display: inline-block;
+      position: absolute;
+      top: 40vh;
+      left: 30%;
+      font-size: 2rem;
+      font-style: italic;
+      font-weight: bolder;
+      align-items: center;
+      word-wrap: break-word;
+      font-Family: 'Helvetica';
+      /* font-Size: "30px"; */
+      /* font-Weight: ; */
+      fill: '#000000'; /* gradient */
+      filter: drop-shadow(80px 50px 5px rgb(112, 108, 108));
+      /* filter: drop-Shadow("true");
+      filter : drop-Shadow-Color('#c0c9d6');
+      filter: dropShadowBlur(8);
+      filter: dropShadowAngle(3.16824 / 6);
+      filter: dropShadowDistance(20)  ; */
+      
+    }
+    
+    
+    @media only screen and (max-width: 600px){
+      .ab{
+          left: 20%;
+          font-size: 1.2rem;
+          font-weight: bolder;
+        }
+     }
+  </style>
+</head>
+
+<body>
+  <!-- <audio autoplay loop id="audio">
+    <source src="audio/happy-birthday.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <script>
+    var audio = document.getElementById("audio");
+    // audio.volume = 0.05;
+  </script> -->
+  <div class="ab">
+    <h1>Happy Birthday Sonam</h1>
+
+  </div>
+
+
+  <script src="js/pixi.js/dist/pixi.js"></script>       
+  <script src="js/main.js"></script>
+</body>
+
+</html>
